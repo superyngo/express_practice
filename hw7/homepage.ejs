@@ -27,6 +27,16 @@
           <h3 class="card-title text-dark"><%=posts[i].title%></h3>
           <div class="card-text text-dark-emphasis"><%=posts[i].content%></div>
           <a href="/view?index=<%=i%>" class="stretched-link">閱讀全文</a>
+          <form method="post" action="/delete">
+            <button
+              type="submit"
+              class="btn-info btn btn-delete"
+              name="index"
+              value="<%=i%>"
+            >
+              X
+            </button>
+          </form>
         </div>
       </div>
     </div>
