@@ -1,0 +1,12 @@
+<link rel="stylesheet" href="/style.css" />
+<div>
+  <% for (let i = 0 ; i < users.length ; i ++) { %>
+  <p><%= users[i].name %> 同學，您好</p>
+  <a href="/view?index=<%=i%>">單獨打招呼頁面</a>
+  <% } %>
+  <br />
+  <br />
+  <div>
+    <a href="/new">新同學報到</a>
+  </div>
+</div>
